@@ -10,7 +10,7 @@ export default function Home() {
         <p className="pt-4 text-primary"> CamelidCoin is a blockchain protocol designed for distributed large language model computation and training. Clients submit input for completion by a pool of compute nodes who are compensated in return. To ensure output validity, we propose a new algorithm called RASTiC which quickly verifies output authenticity with near certainty. Our protocol is built on the original Bitcoin model and has been modified to fit our use case. </p>
         <a href="/whitepaper.pdf" className='mr-auto text-white bg-black py-2 px-6 rounded mt-4 inline-block text-center font-semibold'> Read The Whitepaper &#10132;</a>
         <br/>
-        <a href="google.com" className='mr-auto text-white bg-black py-2 px-6 rounded mt-2 inline-block text-center font-semibold'> View The Source On Github &#10132;</a>
+        <a href="https://github.com/dhd5076/CamelidCoin" className='mr-auto text-white bg-black py-2 px-6 rounded mt-2 inline-block text-center font-semibold'> View The Source On Github &#10132;</a>
       </div>
     </div>
     <div className="sticky top-[100vh] bg-primary w-full text-center p-4 text-xs">
