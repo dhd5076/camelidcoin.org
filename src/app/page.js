@@ -11,6 +11,9 @@ export default function Home() {
         <a href="/whitepaper.pdf" className='mr-auto text-white bg-black py-2 px-6 rounded mt-4 inline-block text-center font-semibold'> Read The Whitepaper &#10132;</a>
         <br/>
         <a href="https://github.com/dhd5076/CamelidCoin" className='mr-auto text-white bg-black py-2 px-6 rounded mt-2 inline-block text-center font-semibold'> View The Source On Github &#10132;</a>
+
+        <br/>
+        <a href="https://discord.gg/Uv3v5pJZQr" className='mr-auto text-white bg-black py-2 px-6 rounded mt-2 inline-block text-center font-semibold'> Join The Discord &#10132;</a>
       </div>
     </div>
     <div className="sticky top-[100vh] bg-primary w-full text-center p-4 text-xs">
