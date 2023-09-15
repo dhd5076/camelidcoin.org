@@ -3,6 +3,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
+    <script type="text/javascript" async src="//l.getsitecontrol.com/94gdpgj4.js"></script>
     <div className="mx-auto p-4 w-screen flex flex-col items-center max-w-6xl">
       <Image src="/logoLarge.png" width={128} height={128} className="mx-auto"></Image>
       <h1 className="text-6xl mt-4 font-sans text-primary pb-4 mx-2"> CamelidCoin</h1>
