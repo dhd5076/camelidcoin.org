@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
 
   return (
     <>
-      <nav className="bg-black/25">
+      <nav className="bg-bgColor/75">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -31,15 +31,15 @@ export default function RootLayout({ children }) {
                 </svg>
               </p>
             </div>
-            <div className="flex flex-1 sitems-center justify-center sm:items-stretch sm:justify-start">
+            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
                 <img className="h-10 w-auto ml-2" src="/logoLarge.png"/>
               </div>
               <div className="hidden sm:flex sm:ml-6 my-auto">
                 <div className="flex space-x-2">
                   <Link href="/" className="text-gray-300 hover:bg-black/25 hover:text-white rounded-md px-3 py-2 text-sm font-bold">Home</Link>
-                  <Link href="/features" className="text-gray-300 hover:bg-black/25 hover:text-white rounded-md px-3 py-2 text-sm font-bold">Features</Link>
-                  <Link href="/faq" className="text-gray-300 hover:bg-black/25 hover:text-white rounded-md px-3 py-2 text-sm font-bold">FAQ</Link>
+                  <Link href="#features" className="text-gray-300 hover:bg-black/25 hover:text-white rounded-md px-3 py-2 text-sm font-bold">Features</Link>
+                  <Link href="#faq" className="text-gray-300 hover:bg-black/25 hover:text-white rounded-md px-3 py-2 text-sm font-bold">FAQ</Link>
                   <Link href="/contact" className="text-gray-300 hover:bg-black/25 hover:text-white rounded-md px-3 py-2 text-sm font-bold">Contact</Link>
                 </div>
               </div>
@@ -97,7 +97,7 @@ export default function RootLayout({ children }) {
 
       {/* Footer */}
       <div className="bg-primary text-center w-full text-xs p-2">
-        &#169; 2023 CamelCoin | Released under the GPLv3 License
+        &#169; 2023 CamelidCoin | Released under the GPLv3 License
       </div>
     </>
   )
