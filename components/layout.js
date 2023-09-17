@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
 
   return (
     <>
-      <nav className="bg-bgColor/75">
+      <nav className="bg-bgColor/75 fixed top-0 w-full z-50 backdrop-blur">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
                   <Link href="/" className="text-gray-300 hover:bg-black/25 hover:text-white rounded-md px-3 py-2 text-sm font-bold">Home</Link>
                   <Link href="#features" className="text-gray-300 hover:bg-black/25 hover:text-white rounded-md px-3 py-2 text-sm font-bold">Features</Link>
                   <Link href="#faq" className="text-gray-300 hover:bg-black/25 hover:text-white rounded-md px-3 py-2 text-sm font-bold">FAQ</Link>
-                  <Link href="/contact" className="text-gray-300 hover:bg-black/25 hover:text-white rounded-md px-3 py-2 text-sm font-bold">Contact</Link>
+                  <Link href="#contact" className="text-gray-300 hover:bg-black/25 hover:text-white rounded-md px-3 py-2 text-sm font-bold">Contact</Link>
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
       <div
         className={`${
           isMobileMenuOpen ? 'block' : 'hidden'
-        } sm:hidden bg-black/75 p-4`}
+        } sm:hidden bg-black/75 z-50 backdrop-blur w-full p-4 fixed top-16`}
         id="mobile-menu"
       >
         <div className="flex flex-col space-y-2">
@@ -70,21 +70,21 @@ export default function RootLayout({ children }) {
             Home
           </Link>
           <Link
-            href="/features"
+            href="#features"
             className="text-white font-bold hover:text-primary"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Features
           </Link>
           <Link
-            href="/faq"
+            href="#faq"
             className="text-white font-bold hover:text-primary"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             FAQ
           </Link>
           <Link
-            href="/contact"
+            href="#contact"
             className="text-white font-bold hover:text-primary"
             onClick={() => setIsMobileMenuOpen(false)}
           >
@@ -92,8 +92,9 @@ export default function RootLayout({ children }) {
           </Link>
         </div>
       </div>
-
-      {children}
+      <div className="pt-16">
+        {children}
+      </div>
 
       {/* Footer */}
       <div className="bg-primary text-center w-full text-xs p-2">

@@ -15,7 +15,7 @@ export default function Document() {
         <Analytics/>
     </Head>
       <body className="bg-[url('/bg1.jpg')] bg-cover transition-all opacity-0 duration-1000 delay-150 sm:delay-0" id="background">
-        <div className="bg-gradient-to-t from-bgColor">
+        <div className="bg-gradient-to-t from-primary/25 to-bgColor/25">
             <Main />
         </div>
         <NextScript />
